@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div>
+      이름 <textarea name="name" cols="10" rows="0"></textarea><br>
+      성별 <textarea name="sex" cols="10" rows="0"></textarea>
+    </div>
+    <button id="clk">Click!!!</button>
+    <div>
+      <p>이름</p>
+      <p>&nbsp;</p>
+    </div>
+    <div>
+      <p>성별</p>
+      <p>&nbsp;</p>
+    </div>
+    
+  </div>
+
+  <script>
+    let standUp={
+      at : "wakeUp",
+      what : ["기상", "모닝땡", "화장실", "샤워","버스탑승"]
+    }
+    let moveOn={
+      at : "walk",
+      what : ["버스비내기","자리탐색","앉기","서기","내릴때버스카드찍기","마트방문","구매"]
+    }
+    let academyGoal={
+      at : "goalIn",
+      what : ["305호실","문열기","QR찍기","자리앉기","PC부팅","크롬켜기","구글로그인","VSCODE켜기","GitHubClone"]
+    }
+    let howDays = [standUp,moveOn,academyGoal]
+    let a = document.getElementById('root')
+    
+    console.dir(a)
+    // a.children[0].children[0].innerHTML = 'regend'
+    
+    let b = a.children[0].children[0].innerHTML
+    console.log(standUp["what"])
+    console.dir(b)
+    console.dir(standUp)
+    
+    b = standUp["what"].join();
+    console.dir(b)
+
+
+
+
+    // let start ={
+    //   at : "home",
+    //   order : ["기상", "모닝땡", "화장실", "샤워","버스탑승"]
+    // }
+    // let inPrograss = {
+    //   at : "road",
+    //   order : ["버스비내기","자리탐색","앉기","서기","내릴때버스카드찍기","마트방문","구매"]
+    // }
+    // let end = {
+    //   at : "academy",
+    //   order : [,"305호실","문열기","QR찍기","자리앉기","PC부팅","크롬켜기","구글로그인","VSCODE켜기","GitHubClone"]
+    // }
+    // let lifeCycle = [start, inPrograss, end]
+  </script>
+</body>
+</html>
